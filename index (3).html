@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NAURA × GERDY — Kamu Boleh Ngetawain Gombalanku, Tapi Habiskan Dulu Sampai Akhir 😭💗💍</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--p:#ffc2dc;--pd:#ff6fa5;--l:#d8c4ff;--t:#5a2a4a;--r:#e0245e}
+*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}
+body{font-family:'Fredoka',system-ui,sans-serif;color:var(--t);background:linear-gradient(160deg,#ffe3ef,#f3e8ff 60%,#fff0f6);min-height:100vh;overflow-x:hidden}
+#fx{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.fl{position:absolute;bottom:-40px;animation:up linear forwards;opacity:.6}
+@keyframes up{to{transform:translateY(-110vh) rotate(40deg);opacity:0}}
+#top{position:fixed;top:0;left:0;right:0;z-index:5;padding:calc(8px + env(safe-area-inset-top,0px)) 12px 8px;display:flex;gap:8px;align-items:center;background:rgba(255,248,251,.88);backdrop-filter:blur(8px)}
+#bar{flex:1;height:12px;background:#fff;border-radius:9px;overflow:hidden;box-shadow:inset 0 0 0 2px var(--p)}
+#bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--pd),var(--l));transition:width .6s;border-radius:9px}
+#pc{font-size:.8rem;font-weight:600;min-width:34px;text-align:right}
+.ib{border:0;background:#fff;border-radius:50%;width:36px;height:36px;font-size:17px;box-shadow:0 2px 0 var(--p);cursor:pointer}
+main{position:relative;z-index:1;max-width:560px;margin:0 auto;padding:74px 16px 40px}
+.scr{display:none;text-align:center;animation:in .5s}.scr.on{display:block}
+@keyframes in{from{opacity:0;transform:translateY(22px) scale(.97)}}
+h1,h2{font-weight:700;line-height:1.2;margin-bottom:12px}h1{font-size:1.9rem;color:var(--r)}h2{font-size:1.4rem;color:var(--pd)}
+p{line-height:1.6;margin-bottom:12px}
+.card{background:#fff;border-radius:24px;padding:20px;box-shadow:0 8px 0 var(--p),0 14px 30px rgba(255,111,165,.2);margin-bottom:16px}
+.big{font-size:3.6rem;display:block;animation:bob 2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-9px) rotate(4deg)}}
+.btn{display:block;width:100%;font:600 1.02rem 'Fredoka';border:0;border-radius:18px;padding:14px;margin:10px 0;background:linear-gradient(135deg,var(--pd),#ff8fb8);color:#fff;box-shadow:0 5px 0 #d94b86;cursor:pointer;transition:.15s}
+.btn:active{transform:translateY(4px) scale(.97);box-shadow:0 1px 0 #d94b86}
+.btn:disabled{opacity:.6}
+.opt{background:#fff;color:var(--t);box-shadow:0 4px 0 var(--l),inset 0 0 0 2px var(--l);text-align:left}
+.opt.x{opacity:.45;pointer-events:none}.opt.pick{background:var(--p);opacity:1}
+.fb{background:#fff0f6;border:2px dashed var(--pd);border-radius:18px;padding:14px;margin:12px 0;text-align:left;animation:in .4s}
+.note{font-size:.8rem;color:#9b5b83}
+.mono{font-family:'Playfair Display',serif;font-style:italic}
+.pct{font-size:4.2rem;font-weight:700;color:var(--r)}
+.row{padding:8px 0;border-bottom:1px dotted var(--p);text-align:left;font-size:.95rem}
+.pair{display:flex;justify-content:center;align-items:center;gap:10px;font-size:4rem}
+.pair .a{animation:lean1 1.4s ease-in-out infinite}.pair .b{animation:lean2 1.4s ease-in-out infinite}.pair .h{font-size:2rem;animation:bob 1s infinite}
+@keyframes lean1{50%{transform:translateX(10px) rotate(8deg)}}@keyframes lean2{50%{transform:translateX(-10px) rotate(-8deg)}}
+.shake .a,.shake .b{animation:sh .2s infinite}@keyframes sh{50%{transform:translateY(-8px) scale(1.1)}}
+#env,#env2{font-size:6rem;cursor:pointer;display:inline-block;animation:bob 1.5s infinite;background:none;border:0}
+.hid{display:none}
+#letter{text-align:left;font-family:'Playfair Display',serif;font-size:1.02rem;line-height:1.75;animation:in .8s}
+#letter p{margin-bottom:14px}
+#cert{border:8px double var(--pd);background:#fffdf7;border-radius:14px;padding:22px 14px;text-align:center;position:relative}
+#cert:before,#cert:after{content:'🌸💗🌷💗🌸';position:absolute;left:0;right:0;font-size:1rem;letter-spacing:6px}
+#cert:before{top:2px}#cert:after{bottom:2px}
+#cert h2{font-family:'Playfair Display',serif;color:#a0336a;margin-top:12px}
+#cert ul{text-align:left;margin:10px auto;max-width:320px;padding-left:20px;font-size:.95rem}
+.conf{position:fixed;top:-20px;z-index:9;font-size:20px;animation:fall 2.4s ease-in forwards;pointer-events:none}
+@keyframes fall{to{transform:translateY(105vh) rotate(540deg)}}
+@media print{body{background:#fff}#fx,#top,.noprint{display:none!important}.scr:not(#s6){display:none!important}main{padding:0}#s6{display:block!important}.card{box-shadow:none;padding:0}}
+</style>
+</head>
+<body>
+<div id="fx"></div>
+<div id="top"><button class="ib" id="back" aria-label="Kembali">⬅️</button><div id="bar"><i></i></div><span id="pc">0%</span><button class="ib" id="mu" aria-label="Musik">🔇</button></div>
+<main>
+
+<section class="scr" id="s0">
+<h1>KHUSUS UNTUK NAURA 💗</h1>
+<button id="env" aria-label="Buka amplop">💌</button>
+<p class="note" id="eh">(ketuk amplopnya)</p>
+<div id="intro" class="hid">
+<div class="card" style="text-align:left">
+<p><b>WOI, NAURA! AKHIRNYA DATENG JUGA 😭</b></p>
+<p>Selamat datang di sebuah eksperimen yang dibuat oleh GERDY, manusia yang entah kenapa punya waktu untuk membuat website khusus buat kamu.</p>
+<p>Di sini kamu bakal menghadapi tebak-tebakan, tes kecocokan, pertanyaan jebakan, dan ramalan nikah yang keakuratannya berada di antara ilmu pengetahuan dan halu tingkat tinggi.</p>
+<p>Tenang, nggak ada ujian matematika. Aku tahu kita masih punya trauma masing-masing. 😭</p></div>
+<button class="btn" id="start">GAS, BONGKAR KEGILAAN GERDY 🤣</button>
+</div>
+<p class="note" style="margin-top:14px">NAURA, JANGAN-JANGAN KITA COCOK… TAPI KAMU AJA YANG BELUM NYADAR? 💍🤣</p>
+</section>
+
+<section class="scr" id="s1">
+<h2>Interogasi Manja 😂</h2><p class="note" id="qn"></p>
+<div class="card"><p class="note" id="qg"></p><p id="qt" style="font-weight:600;font-size:1.1rem"></p><div id="qo"></div><div id="qf"></div></div>
+</section>
+
+<section class="scr" id="s2">
+<h2>TES KECOCOKAN PALING ILMIAH MENURUT ORANG YANG BUKAN ILMUWAN.</h2>
+<div class="pair" id="pr1"><span class="a">👧</span><span class="h">💗</span><span class="b">🧑</span></div>
+<button class="btn" id="calc">ANALISIS DATA KAMI 🔬</button>
+<div id="cr"></div>
+</section>
+
+<section class="scr" id="s3">
+<h2>NAURA × GERDY: KAPAN UNDANGAN NIKAHNYA TURUN? 😭</h2>
+<div class="pair" style="font-size:2.4rem"><span>📅</span><span>💍</span><span>🔮</span></div>
+<div class="card"><p style="font-weight:600">Kalau suatu hari kamu ingin menikah, kamu membayangkan usia berapa?</p><div id="ag"></div></div>
+<div id="rm"></div>
+</section>
+
+<section class="scr" id="s4">
+<h2>Game Flirting 🫣</h2><p class="note" id="cn"></p>
+<div class="card"><p id="ct" style="font-weight:600;font-size:1.1rem"></p><div id="co"></div><div id="cf"></div></div>
+</section>
+
+<section class="scr" id="s5">
+<h2>SURAT RAHASIA 💌</h2>
+<button id="env2" aria-label="Buka surat">💌</button><p class="note" id="eh2">(ketuk amplopnya untuk membuka)</p>
+<div class="card hid" id="letter">
+<p>Buat Naura,</p>
+<p>WKWKWK, akhirnya kamu sampai juga di bagian terakhir. 😭💗</p>
+<p>Aku nggak tahu berapa kali kamu ketawa selama main tadi, tapi semoga setidaknya ada satu bagian yang berhasil bikin hari kamu sedikit lebih menyenangkan.</p>
+<p>Jujur, aku sengaja bikin ini bukan cuma buat menaruh kata-kata manis di layar. Aku pengin bikin sesuatu yang bisa kamu mainkan, sesuatu yang punya cerita, dan sesuatu yang terasa beda dari chat biasa.</p>
+<p>Kadang aku memang suka bercanda, kadang gombalanku bisa bikin orang mempertanyakan kewarasan, dan kadang aku sendiri bingung kenapa kepikiran bikin ide seperti ini. 😭</p>
+<p>Tapi di balik semua candaan itu, aku benar-benar berharap kamu selalu punya alasan untuk tersenyum, punya tempat untuk bercerita ketika capek, dan punya orang-orang yang memperlakukanmu dengan baik.</p>
+<p>Aku nggak bisa menjanjikan siapa yang akan ada di masa depanmu. Aku juga nggak mau memaksakan cerita yang bahkan belum dimulai.</p>
+<p>Kalau suatu hari kita punya kesempatan untuk saling mengenal lebih jauh, aku ingin itu terjadi dengan cara yang nyaman, jujur, dan tanpa tekanan.</p>
+<p>Kalau sekarang kita masih sebatas teman, itu juga nggak apa-apa. Aku tetap senang bisa membuat sesuatu yang khusus untukmu.</p>
+<p>Terima kasih sudah memainkan website absurd ini sampai selesai, Naura.</p>
+<p>Dari seseorang yang menghabiskan waktu membuat kode, menyusun gombalan, dan berharap punchline-nya nggak kamu anggap sebagai tindak pidana:</p>
+<p><b>GERDY 💗</b></p>
+<p class="note">P.S. Kalau kamu ketawa sendirian, jangan salahkan aku. Tapi kalau kamu senyum-senyum pas baca namaku, nah… aku nggak punya bukti, jadi aku nggak akan menyimpulkan apa-apa. WKWKWK. 😭🤣</p>
+</div>
+<button class="btn hid" id="tocert">LANJUT: SERTIFIKAT 🎁</button>
+</section>
+
+<section class="scr" id="s6">
+<div class="card"><div id="cert">
+<h2>SERTIFIKAT KELULUSAN UJIAN KEGEMASAN</h2>
+<p>Diberikan kepada:</p>
+<h1 class="mono">NAURA</h1>
+<p>Atas keberhasilannya:</p>
+<ul><li>Menyelesaikan tebak-tebakan absurd.</li><li>Bertahan menghadapi flirting GERDY.</li><li>Menyelesaikan tes kecocokan tidak resmi.</li><li>Menghadapi ramalan nikah tanpa kehilangan kewarasan.</li></ul>
+<p class="note" id="dt"></p>
+<p class="mono">Tanda tangan:<br><b>GERDY</b><br><small>Kepala Departemen Gombalan dan Pengembangan Website yang Tidak Diminta Siapa-Siapa. 😭</small></p>
+<p class="note">Sertifikat ini hanya untuk hiburan. 💗</p>
+</div></div>
+<button class="btn noprint" onclick="window.print()">CETAK / SIMPAN PDF 🏆</button>
+<button class="btn noprint" id="toend">LANJUT 💞</button>
+</section>
+
+<section class="scr" id="s7">
+<span class="big">🌷</span><h2>Gimana, Naura? 🫣</h2>
+<div id="er"></div>
+<div id="eb">
+<button class="btn opt" data-end="0">WKWKWK GUE KETAWA 😭</button>
+<button class="btn opt" data-end="1">GOMBALAN LU NGGAK NGOTAK 🫵</button></div>
+<div id="nav" class="hid">
+<button class="btn" id="again">MAIN LAGI</button>
+<button class="btn" id="reread">BUKA SURAT LAGI</button>
+<button class="btn" id="menu">KEMBALI KE MENU</button></div>
+</section>
+</main>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+let cur=0,hist=[],qi=0,ci=0,age=null;
+const Q=[
+["Interogasi perasaan","Naura, misalnya ada orang yang tiba-tiba sering ngajak kamu ngobrol. Menurutmu, kemungkinan dia kenapa?",[["Emang orangnya ramah.","VALID. Orang ramah memang banyak. Makanya jangan langsung geer. Tapi jangan juga terlalu polos sampai orang udah ngasih kode pakai lampu sein pun kamu kira mau belok. 😭"],["Lagi gabut parah.","WKWKWK KASIHAN BANGET, MOTIFNYA LANGSUNG DITURUNKAN JADI PENGANGGURAN. 😭 Tapi gabut bisa jadi awal obrolan yang ternyata menyenangkan."],["Ada yang bikin dia penasaran.","EHEMMMM, JAWABANNYA MULAI MENCURIGAKAN NIH. 👀 Tapi penasaran itu baru awal. Kalau mau lebih dekat, tetap harus kenal beneran."]]],
+["Gombalan dengan plot twist","Naura, menurutmu apa hal tersulit yang pernah dilakukan GERDY?",[["Bangun pagi.","Bangun pagi aja perjuangan. Pantas masa depannya perlu disusun dengan kalender dan alarm lima lapis. 😭"],["Mengalah saat debat.","WADUH, KALAU INI BUTUH PENELITIAN LANJUTAN. Tapi katanya orang pintar tahu kapan harus menang dan kapan harus beli seblak biar suasana kembali damai. 🤣"],["Mau mengirim chat tanpa memikirkan 17 kemungkinan balasan.","NAH INI. NGETIK ‘HAI’ BISA 3 DETIK, MIKIRIN LANJUTANNYA BISA 30 MENIT. 😭 Kadang yang bikin gugup bukan kata-katanya, tapi siapa yang bakal baca."]]],
+["Ujian calon pasangan khayalan","Kalau GERDY ngajak makan, lalu kamu bilang ‘terserah’, apa tindakan terbaik?",[["Memesan semua menu.","Selamat, kamu berhasil mengubah ajakan makan menjadi rapat anggaran keluarga. 😭💸"],["Bertanya kamu lagi ingin makan apa.","BENAR. Komunikasi adalah kunci. Karena cinta itu indah, tapi salah pesan makanan ketika lapar bisa menjadi awal perang dunia ketiga. 🤣"],["Langsung mengirim daftar 47 restoran.","NAURA BARU BILANG TERSERAH, GERDY UDAH BIKIN GOOGLE MAPS JADI TESIS. 😭"]]],
+["Pertanyaan paling mencurigakan","Kalau ada orang yang bikin kamu tertawa setiap kali ngobrol, apa yang sebaiknya dilakukan?",[["Pertahankan sebagai teman yang menyenangkan.","SETUJU. Teman yang bikin hari lebih menyenangkan itu berharga. Nggak semua kedekatan harus buru-buru diberi label."],["Kenali lebih jauh kalau memang tertarik.","CIEEE, INI BARU JAWABAN YANG MEMBUKA KEMUNGKINAN. Tapi pelan-pelan aja, chemistry nggak bisa dipaksa kayak mengisi formulir pendaftaran. 💗"],["Minta dia buka cabang stand-up comedy.","WKWKWK DARI PENDEKATAN BERUBAH JADI AUDISI KOMIKA. GERDY DISURUH BIKIN MATERI 15 MENIT DULU. 😭"]]],
+["Roasting manja","Menurutmu, kalau GERDY jadi karakter dalam film romantis, dia bakal jadi siapa?",[["Tokoh utama yang keren.","NAURA, TOLONG JANGAN MEMBERIKAN PENGHARGAAN SEBELUM FILMNYA SELESAI. 😭 Tapi terima kasih atas kepercayaan yang belum tentu pantas ini."],["Sahabat kocak yang selalu ada.","SAHABAT KOCAK? Waduh, GERDY HARUS MEMERIKSA KONTRAKNYA DULU. Jangan sampai sepanjang film cuma jadi tempat curhat tokoh utama. 🤣"],["Karakter yang penonton suruh cepat-cepat menyatakan perasaan.","ANJIR, PENONTON AJA UDAH CAPEK LIHAT GERDY MUTER-MUTER. ‘BANG, NGOMONG AJA BANG, JANGAN BIKIN SEASON 2!’ 😭"]]],
+["Gombalan yang nggak kelihatan gombal","Naura, apa yang bikin sebuah obrolan terasa menyenangkan?",[["Harus selalu lucu.","Kalau harus selalu lucu, GERDY BISA KEHABISAN MATERI DAN BERUBAH JADI PRESENTASI KELOMPOK. 😭"],["Bisa menjadi diri sendiri.","INI JAWABAN BAGUS. Soalnya obrolan yang nyaman nggak harus selalu punya punchline. Kadang bisa ketawa bareng, kadang bisa diam tanpa harus pura-pura."],["Balasannya harus cepat.","WKWKWK INI CHAT APA LOMBA LARI? 😭 Tapi memang menyenangkan kalau orang yang diajak ngobrol juga meluangkan waktu."]]],
+["Skenario masa depan","Misalnya 10 tahun lagi kamu ketemu GERDY lagi. Kira-kira apa yang terjadi?",[["Saling menyapa dan tertawa mengenang masa lalu.","BAYANGIN KETEMU TERUS BILANG, ‘INGAT NGGAK DULU ADA WEBSITE RAMALAN NIKAH?’ MALUNYA BARU DATANG 10 TAHUN KEMUDIAN. 😭"],["Masih berteman.","Pertemanan yang bertahan lama juga cerita yang bagus. Yang penting orang-orangnya tetap saling menghargai."],["Plot twist, ternyata punya cerita panjang bersama.","WOI, INI BARU PILIHAN YANG BIKIN PENULIS FILM LANGSUNG BUKA LAPTOP. 😭💍 Tapi masa depan bukan spoiler yang bisa kita pastikan sekarang."]]],
+["Final boss","Naura, kalau GERDY bilang dia sengaja membuat website ini khusus buat kamu, reaksi kamu apa?",[["Wah, niat banget.","HEHEHE, TERIMA KASIH SUDAH MENGAKUI USAHA SANG PENGEMBANG. BUG-NYA MUNGKIN MASIH ADA, TAPI NIATNYA NGGAK DI-COPY DARI TEMPLATE. 😭💗"],["GERDY KURANG KERJAAN YA? 😭","JUJUR, ITU PERTANYAAN YANG JUGA DITANYAKAN OLEH ORANG YANG MEMBUAT WEBSITE INI. 😭 Tapi kalau bisa bikin kamu ketawa, setidaknya waktunya nggak terbuang sia-sia."],["Aku mau lihat sampai akhir dulu.","OKE, LANJUTKAN SAMPAI AKHIR. HADIAHNYA BUKAN UANG, BUKAN IPHONE, TAPI SEBUAH PENGALAMAN YANG MUNGKIN AKAN KAMU CERITAKAN SAMBIL KETAWA. 🤣"]]]
+];
+const CH=[
+["GERDY mengirim pesan: ‘Naura, aku punya pertanyaan penting.’ Kamu jawab apa?",[["APAAN?","Gerdy: ‘Oke, tarik napas dulu… pertanyaannya: kamu tim seblak atau tim bakso?’ 😭 Rasanya persiapan 20 menit buat satu pertanyaan jajan."],["UTANG KAMU BERAPA? 😭","WKWKWK KENAPA LANGSUNG FINANCIAL CHECK-UP 😭 Tenang, pertanyaannya cuma: kamu tim seblak atau bakso? Aku harus tahu sebelum rapat kabinet jajan dimulai."],["LANGSUNG AJA, JANGAN BIKIN PENASARAN.","Gerdy: ‘Siap, tegas.’ Lalu 3 menit ‘sedang mengetik…’ muncul dan hilang berkali-kali. Intinya: pertanyaannya soal seblak, tapi mentalnya sudah ujian nasional. 😭"]]],
+["Kalau GERDY tiba-tiba memuji kamu, reaksimu?",[["MAKASIH HEHE.","Gerdy langsung diam 3 detik. Itu bukan sinyal hilang, itu bahagia yang loading. 😭💗"],["AH, BISA AJA KAMU.","Klasik! Kalimat sakti yang artinya ‘makasih, tapi aku malu’. Gerdy paham dan nggak akan memperpanjang. 🤣"],["KAMU BUTUH SESUATU YA? 👀","NAH KAN, REPUTASI ORANG BAIK SUDAH RUNTUH SEBELUM SEMPAT BERKEMBANG. 😭 Padahal kali ini pujiannya gratis, tidak ada biaya administrasi."]]],
+["Kalau suatu hari kalian jalan bareng, siapa yang bakal menentukan tempat makan?",[["Naura.","Keputusan diterima. Gerdy cuma minta satu hal: jangan pilih tempat yang antreannya lebih panjang dari skripsi. 😭"],["Gerdy.","Wah, kamu berani juga. Gerdy langsung stres, soalnya sekarang dia dituntut selera yang nggak mengecewakan. 🤣"],["Yang penting dua-duanya setuju.","Jawaban paling dewasa sejagat. Gerdy mencatat: bukan cuma soal makan, ini skill komunikasi. 💗"]]]
+];
+const AGE=["Di bawah 25 tahun.","25–30 tahun.","Di atas 30 tahun.","BELUM MIKIR, MASIH MAU JAJAN. 😭"];
+const AGER=["Semesta bilang: santai, itu masih panjang. Selesaikan dulu urusan dunia, kenali diri sendiri, dan jangan buru-buru cetak undangan.","Zona klasik! Kalender masih kosong, tapi grup WhatsApp keluarga biasanya sudah siap tanya ‘kapan?’. Semesta menyarankan: jangan dijawab sebelum siap.","Semesta mencatat: pilihanmu matang. Undangan yang bagus nggak harus cepat, yang penting orangnya tepat dan sama-sama nyaman.","Prioritas valid! Semesta menandai: pernikahan masuk antrean setelah jajan. Seblak dulu, kontrak seumur hidup belakangan. 🌶️"];
+const REG=[["BOLEH IKUT SELEKSI 👀","BAIK, PENDAFTARAN DIBUKA. GERDY HARUS MENYERAHKAN CV, RIWAYAT KESERIUSAN, KEMAMPUAN KOMUNIKASI, DAN BUKTI BISA MENDENGARKAN TANPA MOTONG PEMBICARAAN. 😭💍"],["LIHAT NANTI YA 😭","SIAP, KAK. STATUS PENDAFTARAN: MENUNGGU. TIDAK ADA TEKANAN, TIDAK ADA DEADLINE, DAN TIDAK ADA TAGIHAN EMOSIONAL. 🤣"],["WKWKWK KAMU NGADI-NGADI.","WKWKWK BENAR JUGA. GERDY BIKIN WEBSITE, TERUS WEBSITE-NYA MALAH JADI TEMPAT DIA MENGUJI KEBERANIANNYA SENDIRI. 😭"]]];
+const END=["MISSION COMPLETE! GERDY BERHASIL MEMBUAT SATU WEBSITE, MENGHABISKAN WAKTU, DAN MENDAPAT PENGAKUAN BAHWA HUMORNYA SETIDAKNYA TIDAK GAGAL TOTAL. 🤣💗","KRITIK DITERIMA. TIM PENGEMBANG AKAN MENGADAKAN RAPAT EVALUASI, MEMBELI SEBLAK, DAN MEMPERTIMBANGKAN PENSIUN DARI DUNIA PERCINTAAN SELAMA 7 MENIT. 😭"];
+
+/* audio (tidak autoplay; hanya setelah klik) */
+let ac,mon=false,tm,ni=0;const notes=[523,659,784,659,587,698,880,698];
+function ctx(){try{ac=ac||new (window.AudioContext||window.webkitAudioContext)();if(ac.state==='suspended')ac.resume()}catch(e){}return ac}
+function tone(f,d=.15,v=.07,ty='sine',dl=0){try{const a=ctx(),o=a.createOscillator(),g=a.createGain(),t=a.currentTime+dl;o.type=ty;o.frequency.setValueAtTime(f,t);g.gain.setValueAtTime(v,t);g.gain.exponentialRampToValueAtTime(.001,t+d);o.connect(g).connect(a.destination);o.start(t);o.stop(t+d+.02)}catch(e){}}
+const pop=(f=620)=>tone(f,.12);
+const sparkle=()=>[1047,1319,1568,2093].forEach((f,i)=>tone(f,.2,.04,'sine',i*.07));
+const giggle=()=>[700,900,750,950,800].forEach((f,i)=>tone(f,.09,.05,'triangle',i*.08));
+function mus(){if(!mon)return;tone(notes[ni++%8],.7,.045,'triangle');tm=setTimeout(mus,520)}
+$('#mu').onclick=()=>{mon=!mon;$('#mu').textContent=mon?'🎵':'🔇';clearTimeout(tm);if(mon){ctx();mus()}};
+
+/* efek */
+setInterval(()=>{if(document.hidden)return;const s=document.createElement('span');s.className='fl';s.textContent=['💗','🌸','💜','✨'][Math.random()*4|0];s.style.left=Math.random()*100+'%';s.style.fontSize=12+Math.random()*16+'px';s.style.animationDuration=7+Math.random()*5+'s';$('#fx').appendChild(s);setTimeout(()=>s.remove(),12500)},900);
+function confetti(){sparkle();for(let i=0;i<26;i++){const c=document.createElement('span');c.className='conf';c.textContent=['🎉','💗','🌸','💖'][i%4];c.style.left=Math.random()*100+'vw';c.style.animationDelay=Math.random()*.6+'s';document.body.appendChild(c);setTimeout(()=>c.remove(),3200)}}
+
+/* navigasi & progres */
+function prog(p){p=Math.round(p);$('#bar i').style.width=p+'%';$('#pc').textContent=p+'%'}
+const base={0:0,2:50,3:60,5:90,6:95,7:100};
+function show(n,push=true){if(push&&n!==cur)hist.push(cur);$$('.scr').forEach(s=>s.classList.remove('on'));$('#s'+n).classList.add('on');cur=n;$('#back').style.visibility=n?'visible':'hidden';scrollTo(0,0);
+if(n===1)prog(2+qi/Q.length*46);else if(n===4)prog(70+ci/CH.length*18);else prog(base[n]??0);
+if(n===6)$('#dt').textContent='Dicetak pada: '+new Date().toLocaleDateString('id-ID',{day:'numeric',month:'long',year:'numeric'})}
+$('#back').onclick=()=>{pop(440);if(hist.length)show(hist.pop(),false)};
+
+/* pembuka */
+$('#env').onclick=()=>{giggle();$('#env').textContent='💗';$('#eh').classList.add('hid');$('#intro').classList.remove('hid');confetti()};
+$('#start').onclick=()=>{pop();qi=0;loadQ();show(1)};
+
+/* kuis */
+function loadQ(){const q=Q[qi];$('#qn').textContent='Soal '+(qi+1)+' dari '+Q.length;$('#qg').textContent='SOAL '+(qi+1)+' — '+q[0].toUpperCase();$('#qt').textContent=q[1];$('#qf').innerHTML='';$('#qo').innerHTML='';prog(2+qi/Q.length*46);
+q[2].forEach((o,i)=>{const b=document.createElement('button');b.className='btn opt';b.textContent='ABC'[i]+'. '+o[0];b.onclick=()=>{pop(520+i*90);$$('#qo .opt').forEach(x=>x.classList.add('x'));b.classList.add('pick');$('#qf').innerHTML='<div class="fb">'+o[1]+'</div><button class="btn" id="nx">'+(qi<Q.length-1?'LANJUT 👉':'KE TES KECOCOKAN 💘')+'</button>';prog(2+(qi+1)/Q.length*46);$('#nx').onclick=()=>{pop();if(qi<Q.length-1){qi++;loadQ()}else{confetti();show(2)}}};$('#qo').appendChild(b)})}
+
+/* kalkulator */
+$('#calc').onclick=()=>{pop();const t=85+Math.floor(Math.random()*15),r=$('#cr');$('#calc').disabled=true;$('#pr1').classList.add('shake');r.innerHTML='<div class="card"><p class="note">KECOCOKAN SIMULASI</p><div class="pct" id="pn">0%</div></div>';let v=0;const iv=setInterval(()=>{v=Math.min(t,v+2);$('#pn').textContent=v+'%';if(v>=t){clearInterval(iv);done()}},40);
+function done(){$('#pr1').classList.remove('shake');confetti();const m=Math.min;r.innerHTML+='<div class="card"><p><b>'+t+'% WOI?! 😭💗</b></p><div class="row">Potensi ketawa bareng: '+m(99,t-1)+'%.</div><div class="row">Potensi debat soal makanan: '+m(99,t-4)+'%.</div><div class="row">Potensi salah tingkah: '+m(99,t+1)+'%.</div><div class="row">Potensi saling memahami: belum bisa dinilai cuma lewat tombol.</div><div class="row">Potensi GERDY terlalu percaya diri setelah melihat hasil: 100%. 😭</div><p class="note" style="margin-top:10px">*Persentase ini hanya simulasi hiburan, bukan ukuran kecocokan yang sebenarnya.</p></div><button class="btn opt" id="why">KOK BISA TINGGI BANGET?!</button><div id="wy"></div>';
+$('#why').onclick=()=>{pop();$('#why').classList.add('x');$('#wy').innerHTML='<div class="fb">Karena algoritmanya dikembangkan oleh GERDY, diuji oleh rasa penasaran, dan diaudit oleh harapan yang sedikit terlalu optimistis. 🤣</div><button class="btn" id="n3">LANJUT KE RAMALAN 🔮</button>';$('#n3').onclick=()=>{pop();$('#calc').disabled=false;show(3)}}}};
+
+/* ramalan */
+AGE.forEach((a,i)=>{const b=document.createElement('button');b.className='btn opt';b.textContent=a;b.onclick=()=>{pop(500+i*80);age=i;try{localStorage.setItem('ng_age',i)}catch(e){}$$('#ag .opt').forEach(x=>x.classList.add('x'));b.classList.add('pick');$('#rm').innerHTML='<button class="btn" id="open">BUKA RAMALAN MASA DEPAN 🔮</button>';$('#open').onclick=reveal};$('#ag').appendChild(b)});
+function reveal(){pop();$('#open').disabled=true;$('#open').textContent='🔮 …memutar mesin semesta…';setTimeout(()=>{confetti();$('#rm').innerHTML='<div class="card"><h2>HASIL RAMALAN: MASIH DIRAHASIAKAN OLEH SEMESTA.</h2><p>'+AGER[age]+'</p><p>Calon pasangan Naura belum bisa dibocorkan. Persyaratannya: harus saling nyaman, bisa komunikasi, menghargai batasan, dan nggak cuma jago bikin gombalan.</p><p class="note">*Ini ramalan hiburan, bukan prediksi nyata.</p><p><b>APAKAH GERDY BISA MENDAFTAR?</b></p><div id="rg"></div><div id="rr"></div></div>';
+REG.forEach(o=>{const b=document.createElement('button');b.className='btn opt';b.textContent=o[0];b.onclick=()=>{pop(700);$$('#rg .opt').forEach(x=>x.classList.add('x'));b.classList.add('pick');$('#rr').innerHTML='<div class="fb">'+o[1]+'</div><button class="btn" id="n4">LANJUT KE GAME FLIRTING 🫣</button>';$('#n4').onclick=()=>{pop();ci=0;loadC();show(4)}};$('#rg').appendChild(b)})},1800)}
+
+/* flirting */
+function loadC(){const q=CH[ci];$('#cn').textContent='Skenario '+(ci+1)+' dari '+CH.length;$('#ct').textContent=q[0];$('#cf').innerHTML='';$('#co').innerHTML='';prog(70+ci/CH.length*18);
+q[1].forEach(o=>{const b=document.createElement('button');b.className='btn opt';b.textContent=o[0];b.onclick=()=>{pop(700);$$('#co .opt').forEach(x=>x.classList.add('x'));b.classList.add('pick');$('#cf').innerHTML='<div class="fb">'+o[1]+'</div><button class="btn" id="cn2">'+(ci<CH.length-1?'LANJUT 👉':'BUKA SURAT RAHASIA 💌')+'</button>';prog(70+(ci+1)/CH.length*18);$('#cn2').onclick=()=>{pop();if(ci<CH.length-1){ci++;loadC()}else{confetti();show(5)}}};$('#co').appendChild(b)})}
+
+/* surat */
+$('#env2').onclick=()=>{giggle();confetti();$('#env2').textContent='💗';$('#eh2').classList.add('hid');$('#letter').classList.remove('hid');$('#tocert').classList.remove('hid');setTimeout(()=>$('#letter').scrollIntoView({behavior:'smooth'}),100)};
+$('#tocert').onclick=()=>{pop();show(6)};$('#toend').onclick=()=>{pop();show(7)};
+
+/* ending */
+$$('[data-end]').forEach(b=>b.onclick=()=>{giggle();confetti();$('#er').innerHTML='<div class="fb"><b>'+END[+b.dataset.end]+'</b></div>';$('#eb').classList.add('hid');$('#nav').classList.remove('hid')});
+function resetEnd(){$('#er').innerHTML='';$('#eb').classList.remove('hid');$('#nav').classList.add('hid')}
+function resetAll(){qi=0;ci=0;age=null;hist=[];$('#cr').innerHTML='';$('#calc').disabled=false;$('#rm').innerHTML='';$$('#ag .opt').forEach(x=>x.classList.remove('x','pick'));$('#letter').classList.add('hid');$('#tocert').classList.add('hid');$('#env2').textContent='💌';$('#eh2').classList.remove('hid');resetEnd()}
+$('#again').onclick=()=>{pop();resetAll();loadQ();show(1,false)};
+$('#reread').onclick=()=>{pop();resetEnd();show(5)};
+$('#menu').onclick=()=>{pop();resetAll();$('#env').textContent='💌';$('#eh').classList.remove('hid');$('#intro').classList.add('hid');show(0,false)};
+show(0,false);
+</script>
+</body>
+</html>
